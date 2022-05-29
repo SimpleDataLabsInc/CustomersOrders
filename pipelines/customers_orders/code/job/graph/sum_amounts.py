@@ -9,7 +9,7 @@ def sum_amounts(spark: SparkSession, in0: DataFrame) -> DataFrame:
 
     return df1.agg(
         count(col("order_id")).alias("orders"), 
-        sum(col("amount")).alias("amounts"), 
+        round(sum(col("amount"))).alias("amounts"), 
         first(col("email")).alias("email"), 
         first(col("full_name")).alias("full_name")
     )

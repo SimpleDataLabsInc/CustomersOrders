@@ -335,7 +335,7 @@
           "target" : "amounts",
           "expression" : {
             "format" : "sql",
-            "expression" : "sum(amount)"
+            "expression" : "round(sum(amount))"
           },
           "description" : "",
           "_row_id" : null
