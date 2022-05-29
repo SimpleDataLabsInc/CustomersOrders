@@ -1,0 +1,62 @@
+name: CustomersOrders
+description: ''
+version: 0.0.1
+author: maciej+demo6@prophecy.io
+language: python
+pipelines:
+  pipelines/customers_orders:
+    name: customers_orders
+    description: ''
+    author: maciej+demo6@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-05-29 00:45:39'
+    datasets:
+      inputs:
+      - 1394/datasets/orders
+      - 1394/datasets/customers
+      outputs:
+      - 1394/datasets/report
+    dependencies: {}
+datasets:
+  datasets/orders:
+    name: orders
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-05-29 00:54:21'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: File
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-05-29 00:54:21'
+  datasets/customers:
+    name: customers
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-05-29 00:55:31'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: File
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-05-29 00:55:31'
+  datasets/report:
+    name: report
+    description: ''
+    author: maciej+demo6@prophecy.io
+    createdAt: '2022-05-29 00:57:46'
+    physicalDatasets:
+      dev:
+        fabricId: 307
+        datasetType: Database
+        description: ''
+        author: maciej+demo6@prophecy.io
+        createdAt: '2022-05-29 00:57:46'
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
+template: '[]'

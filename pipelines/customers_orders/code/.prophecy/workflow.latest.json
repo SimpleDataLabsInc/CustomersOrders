@@ -1,0 +1,380 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "307",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "interimMode" : "Full",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ]
+  },
+  "connections" : [ {
+    "id" : "poeihLKIaXARU-MjHZgr1",
+    "source" : "FZ2Kado7p8lgHUzHSiwr4$$IwK6Yl2IrzK6iMQVD5Y1P",
+    "sourcePort" : "LxRdSwP2WrL3a-nzFQVhU$$ze0WvNtS26LgU3EAVzW81",
+    "target" : "vEEem_dMdrDeD6nu0jwiq$$7BqSNk7V5xOUoIjftINy7",
+    "targetPort" : "nesmlUuClAUP1Mi8jwlT3$$Ky2re8tDrSb-u5ohJGdXj"
+  }, {
+    "id" : "goMvkKMVRPEZQG3rgDLfi",
+    "source" : "Fc8RRpRqYFwwxQ6Onhm2C$$oFXGKKG-FS-igiq5Usp6F",
+    "sourcePort" : "noUb73leYRLOx5NEqrMNb$$wZ6qBDkcFMD6KBoYiDVIB",
+    "target" : "vEEem_dMdrDeD6nu0jwiq$$7BqSNk7V5xOUoIjftINy7",
+    "targetPort" : "4DiZngD71PSngqLdNYOOg$$cPFtpZjzcrrF9O6qbj9HU"
+  }, {
+    "id" : "Xmo1pkDTwebjnEeUxc_GN",
+    "source" : "vEEem_dMdrDeD6nu0jwiq$$7BqSNk7V5xOUoIjftINy7",
+    "sourcePort" : "OU3t4a5Sf1YzuQ8nanGQ4$$CCf9SlaYNS2TEX77A1n8F",
+    "target" : "KjpWTdxu21O410-UqQvLZ$$nfLAkXE5mpZOBLirRDB5z",
+    "targetPort" : "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw"
+  }, {
+    "id" : "L8pA9kONIE7gTxAFqGdlW",
+    "source" : "KjpWTdxu21O410-UqQvLZ$$nfLAkXE5mpZOBLirRDB5z",
+    "sourcePort" : "MnTjOlTRWEpCXdH1PbrN9$$QIsZwJ9ymAFdruCzQ6Zxl",
+    "target" : "eA-YelFxGa0-o8dHB3vZM$$NBGQIpnrUNsTP_ibHJp2w",
+    "targetPort" : "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4"
+  }, {
+    "id" : "jj6RoMfw_LAASP4PSqRF6",
+    "source" : "eA-YelFxGa0-o8dHB3vZM$$NBGQIpnrUNsTP_ibHJp2w",
+    "sourcePort" : "syXiEscqd3vptdqlEoeOJ$$_ytvbQCPemr_TyhGVxdo6",
+    "target" : "_pkMHjhyt2eiDsWh-Os0N$$Xx3ZBK00HFY0t3Mthivta",
+    "targetPort" : "JMOnEcKP6QxJb_UH5gpqP$$-Fgbl2EeTyLQuSb7ADnME"
+  } ],
+  "processes" : {
+    "KjpWTdxu21O410-UqQvLZ$$nfLAkXE5mpZOBLirRDB5z" : {
+      "id" : "KjpWTdxu21O410-UqQvLZ$$nfLAkXE5mpZOBLirRDB5z",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "cleanup",
+        "slug" : "cleanup",
+        "x" : 521.0000000299322,
+        "y" : 208,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "MnTjOlTRWEpCXdH1PbrN9$$QIsZwJ9ymAFdruCzQ6Zxl",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw##last_name", "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw##order_id", "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw##email", "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw##amount", "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw##first_name", "LtLR_rT433zI_rv6h9jcd$$9dxl_FiuLsn53lsEZXbyw##customer_id" ],
+        "expressions" : [ {
+          "target" : "order_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "order_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amount"
+          },
+          "description" : ""
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "target" : "full_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat(first_name, last_name)"
+          },
+          "description" : ""
+        } ]
+      }
+    },
+    "_pkMHjhyt2eiDsWh-Os0N$$Xx3ZBK00HFY0t3Mthivta" : {
+      "id" : "_pkMHjhyt2eiDsWh-Os0N$$Xx3ZBK00HFY0t3Mthivta",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "report",
+        "slug" : "report",
+        "x" : 1079.0001560702353,
+        "y" : 209,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "JMOnEcKP6QxJb_UH5gpqP$$-Fgbl2EeTyLQuSb7ADnME",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "1394/datasets/report"
+      }
+    },
+    "Fc8RRpRqYFwwxQ6Onhm2C$$oFXGKKG-FS-igiq5Usp6F" : {
+      "id" : "Fc8RRpRqYFwwxQ6Onhm2C$$oFXGKKG-FS-igiq5Usp6F",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : 11.000041817438273,
+        "y" : 308,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "noUb73leYRLOx5NEqrMNb$$wZ6qBDkcFMD6KBoYiDVIB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "1394/datasets/customers"
+      }
+    },
+    "vEEem_dMdrDeD6nu0jwiq$$7BqSNk7V5xOUoIjftINy7" : {
+      "id" : "vEEem_dMdrDeD6nu0jwiq$$7BqSNk7V5xOUoIjftINy7",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "by_customer_id",
+        "slug" : "by_customer_id",
+        "x" : 277.0001095449131,
+        "y" : 207,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nesmlUuClAUP1Mi8jwlT3$$Ky2re8tDrSb-u5ohJGdXj",
+          "slug" : "in0"
+        }, {
+          "id" : "4DiZngD71PSngqLdNYOOg$$cPFtpZjzcrrF9O6qbj9HU",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "OU3t4a5Sf1YzuQ8nanGQ4$$CCf9SlaYNS2TEX77A1n8F",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.customer_id = in1.customer_id"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "order_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.order_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.amount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.first_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.last_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.email"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allIn1" : false,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "nesmlUuClAUP1Mi8jwlT3$$Ky2re8tDrSb-u5ohJGdXj##customer_id", "4DiZngD71PSngqLdNYOOg$$cPFtpZjzcrrF9O6qbj9HU##customer_id", "nesmlUuClAUP1Mi8jwlT3$$Ky2re8tDrSb-u5ohJGdXj##amount", "nesmlUuClAUP1Mi8jwlT3$$Ky2re8tDrSb-u5ohJGdXj##customer_id", "nesmlUuClAUP1Mi8jwlT3$$Ky2re8tDrSb-u5ohJGdXj##order_id", "4DiZngD71PSngqLdNYOOg$$cPFtpZjzcrrF9O6qbj9HU##first_name", "4DiZngD71PSngqLdNYOOg$$cPFtpZjzcrrF9O6qbj9HU##email", "4DiZngD71PSngqLdNYOOg$$cPFtpZjzcrrF9O6qbj9HU##last_name" ],
+        "allIn0" : false,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "FZ2Kado7p8lgHUzHSiwr4$$IwK6Yl2IrzK6iMQVD5Y1P" : {
+      "id" : "FZ2Kado7p8lgHUzHSiwr4$$IwK6Yl2IrzK6iMQVD5Y1P",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "orders",
+        "slug" : "orders",
+        "x" : 11.000262381034673,
+        "y" : 108,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "LxRdSwP2WrL3a-nzFQVhU$$ze0WvNtS26LgU3EAVzW81",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "1394/datasets/orders"
+      }
+    },
+    "eA-YelFxGa0-o8dHB3vZM$$NBGQIpnrUNsTP_ibHJp2w" : {
+      "id" : "eA-YelFxGa0-o8dHB3vZM$$NBGQIpnrUNsTP_ibHJp2w",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "sum_amounts",
+        "slug" : "sum_amounts",
+        "x" : 788.0001317707588,
+        "y" : 208,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "syXiEscqd3vptdqlEoeOJ$$_ytvbQCPemr_TyhGVxdo6",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "orders",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "count(order_id)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amounts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(amount)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(email)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "full_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(full_name)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4##order_id", "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4##full_name", "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4##email", "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4##customer_id", "rKwIzmm3LvbMqW-uv9kwV$$qPgAmLAxBzlyAhtATLmW4##amount" ],
+        "groupBy" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ]
+  }
+}
